@@ -44,13 +44,14 @@
 
   .container{
     width: 100%;
-    max-width: 1258px;
+    max-width: 1358px;
     margin: 0 auto;
     padding: 0 15px;
   }
 
   h1{
-    font-size: 35px;
+    z-index: 999;
+    font-size: 36px;
     font-weight: normal;
     line-height: normal;
   }
@@ -58,6 +59,10 @@
   h2{
     font-weight: normal;
     line-height: normal;
+  }
+
+  .color-azul{
+    color: var(--colorAzulPrincipal);
   }
 
   header{
@@ -98,6 +103,7 @@
     background-color: var(--colorAzulPrincipal);
     padding: 14px 35.5px;
     border-radius: 10px;
+    cursor: pointer;
   }
 
   button{
@@ -107,32 +113,37 @@
     width: 80%;
     height: 50px;
     font-size: 16px;
+    cursor: pointer;
   }
 
-  main{
+  .mainbg{
+    height: 550px;
     background-color: var(--colorCinzaClaro);
     
     
   }
   .main{
-    padding: 20px;
-    display: flex;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    align-items: center;
+    
+    /* display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
-
+    justify-content: space-between; */
 
   }
 
 .bannerHero{
-    z-index: 0;
-    height: 600px;
+    
+    width: 780px;
 }
 
-  .simulador{
+  .simulador-box{
     z-index: 999;
     padding: 35px 0;
-    width: 400px;
+    width: 360px;
     height: 431px;
     display: flex;
     align-items: center;
@@ -180,4 +191,122 @@
     background: var(--colorAzulPrincipal);
     cursor: pointer;
   }
+
+
   
+  .soluction{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  
+  .card-soluction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 352px;
+    height: 207px;
+    border: 1px solid var(--colorAzulSecundario);
+    border-radius: 8px;
+    padding: 30px;
+
+  }
+
+  .card-soluction h4{
+    color: var(--colorAzulPrincipal);
+  }
+
+  .appContainer-bg{
+    background-color: #03272E;
+
+  }
+  .appContainer{
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    height: 572.56px;
+  }
+
+  .textoapp{
+    color: var(--colorBranco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .textoapp{
+    h2, p{
+      margin: 20px 0;
+    }
+    
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    height: 300px;
+    
+  }
+
+
+  footer .left{
+    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  footer .right{
+    margin-bottom: 20px;
+    
+  }
+
+
+  .simulador{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+    width: 100%;
+  }
+
+  .simulador-right .simulador-left{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .simulador-input{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorCinzaClaro);
+    height: 60px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px 20px;
+  }
+
+  .simulador-input input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+
+  .simulador-input select{
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+
+  .simulador-input label{
+    font-size: 12px;
+    color: var(--colorCinzaEscuro);
+  }

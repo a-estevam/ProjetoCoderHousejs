@@ -1,50 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aqui, o poder está na sua mão!</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo">TaNa<strong>Mão</strong></div>
-        <ul>
-            <li>Simule seu crédito</li>
-            <li>Soluções</li>
-            <li>Baixe nosso APP</li>
-        </ul>
-        <div class="btnLogin">Entrar</div>
+      <a href="index.html"><div class="logo">TaNa<strong>Mão.</strong></div></a>
+      <ul>
+        <a href="simulador.html"><li>Simule seu crédito</li></a>
+        <a href="#"><li>Soluções</li></a>
+        <a href="#"><li>Baixe nosso APP</li></a>
+      </ul>
+      <a href="#"><div class="btnLogin">Entrar</div></a>
     </header>
-    
+
     <main>
+      <div class="mainbg">
+
         <div class="main container">
-            <div class="simulador">
-                <h2>De quanto você precisa?</h2>
-
-                <div class="slider-container">
-                    <span id="slider-value">50</span>
-                    <input type="range" id="slider" min="0" max="100" value="50">
-                </div>
-                  
-
-                <button>Simule já</button>
-
+            <div class="simulador-box">
+              <h2>De quanto você precisa?</h2>
+    
+              <div class="slider-container">
+                <span id="slider-value">R$10.000</span>
+                <input type="range" id="slider" min="0" max="100" value="50" />
+              </div>
+    
+              <button>Simule já</button>
             </div>
-
-            <img class="bannerHero" src="./img/bannerHero.png" alt="" srcset="">
-
-            <h1> <strong>Deixe os abusos para trás!</strong><br>
-                No <strong>TaNaMão</strong>, você tem<br>crédito com prazos maiores,<br>
-                taxas justas e parcelas que<br>
-                cabem no bolso
+    
+            <img class="bannerHero" src="./img/bannerHero.png" alt="" srcset="" />
+    
+            <h1>
+              <strong>Deixe os abusos <br> para trás! </strong> No<strong>TaNaMão</strong>, você tem crédito com prazos
+              maiores, taxas justas e parcelas que cabem no bolso
             </h1>
-        </div>
+          </div>
 
+      </div>
     </main>
 
+    <section>
+        <div class="soluction container">
+            <div class="card-soluction">
+                <h4>Experiência 100% digital</h4>
+                <p>Combinamos rapidez na aprovação de crédito e na liberação do empréstimo, sem burocracia.</p>
+            </div>
+            <div class="card-soluction">
+                <h4>Atendimento premiado</h4>
+                <p>Vencemos 3 vezes consecutivos o prêmio Reclame Aqui na categoria melhor empresa de empréstimo online</p>
+            </div>
+            <div class="card-soluction">
+                <h4>Especialistas TaNaMão</h4>
+                <p>Conte com nosso time pra encontrar as melhores opções e condições de crédito, sempre que precisar.</p>
+            </div>
+        </div>
+    </section>
 
 
-    
-</body>
+    <section class="appContainer-bg">
+        <div class="appContainer container">
+            <div class="textoapp">
+                <h2>Baixe já o nosso app</h2>
+                <p>Simule um empréstimo, financie um veículo ou reforme seu imóvel, tudo isso e outras possibilidades, você encontra de forma fácil e rápida no App da Creditas.</p>
+                <button class="baixar-app">baixar APP</button>
+            </div>
+            <img src="./img/baixeNossoApp.png" alt="" srcset="">
+        </div>
+    </section>
+
+    <footer class="container">
+        <div class="left">
+            <a href="#" class="color-azul">Institucional</a>
+            <a href="#">Quem Somos</a>
+            <a href="#">Tech blog</a>
+            <a href="#">Trabalhe conosco</a>
+            <a href="#">Developers - API</a>
+            <a href="#">Mapa do site</a>
+            <a href="#">Seja parceiro</a>
+            <a href="#">Relação com investidores</a>
+            <a href="#">Mapa do site</a>
+            <a href="#">Seja parceiro</a>
+        </div>
+        <div class="right">
+            <div class="logo">TaNa<strong>Mão.</strong></div>
+            <img src="./img/socialMedia.png" alt="" srcset="">
+
+        </div>
+    </footer>
+
+
+  </body>
 </html>
