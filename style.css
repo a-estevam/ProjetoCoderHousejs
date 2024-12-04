@@ -117,6 +117,22 @@
     cursor: pointer;
   }
 
+  .btnsimule{
+    background-color: var(--colorAzulPrincipal);
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+
   .mainbg{
     height: 550px;
     background-color: var(--colorCinzaClaro);
