@@ -310,3 +310,172 @@
     font-size: 12px;
     color: var(--colorCinzaEscuro);
   }
+
+
+
+
+  /* celular */
+
+  @media screen and (max-width: 950px) {
+    
+    h2, p{
+      text-align: center;
+    }
+
+    header{
+      height: 92px;
+      width: 100%;
+      max-width: 1516px;
+  
+      margin: 0 auto;
+      padding: 0 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--colorBranco);
+    }
+  
+    .logo{
+      color: var(--colorCinzaEscuro);
+      font-size: 40px;
+    }
+    strong{
+      color: var(--colorAzulPrincipal);
+      font-weight: bold;
+    }
+  
+  
+    button{
+      margin: 0 auto;
+      background-color: var(--colorAzulPrincipal);
+      border: none;
+      border-radius: 10px;
+      width: 80%;
+      height: 50px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+  
+
+    
+  
+    .mainbg{
+      height: 750px;
+      background-color: var(--colorCinzaClaro);
+    
+    }
+    .main{
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+  
+    }
+
+    ul{
+      display: none;
+    }
+    
+    .bannerHero{
+      display: none;
+    }
+
+    h1{
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+
+    .simulador-box{
+      z-index: 999;
+      padding: 35px 0;
+      width: 360px;
+      height: 431px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      background-color: var(--colorBranco);
+      border-radius: 10px;
+    }
+  
+  
+    .soluction{
+      margin-top: 20px;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+  
+    }
+    
+    .card-soluction{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      width: 352px;
+      height: 207px;
+      border: 1px solid var(--colorAzulSecundario);
+      border-radius: 8px;
+      padding: 30px;
+  
+    }
+  
+    .card-soluction h4{
+      color: var(--colorAzulPrincipal);
+    }
+  
+    .appContainer-bg{
+      background-color: #03272E;
+  
+    }
+    .appContainer{
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      
+      height: 772.56px;
+    }
+  
+    .textoapp{
+      color: var(--colorBranco);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  
+    .textoapp{
+      h2, p{
+        margin: 20px 0;
+      }
+      
+    }
+  
+    footer{
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      height: 300px;
+      
+    }
+  
+    footer .left{
+      
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+  
+    footer .right{
+      margin-bottom: 20px;
+      
+    }
+  }
