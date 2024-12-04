@@ -219,6 +219,7 @@
 
   .card-soluction h4{
     color: var(--colorAzulPrincipal);
+    font-size: 24px;
   }
 
   .appContainer-bg{
@@ -230,9 +231,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    
     height: 572.56px;
+  }
+
+  .appContainer .mobile{
+    display: none;
   }
 
   .textoapp{
@@ -385,7 +388,15 @@
     h1{
       margin-top: 20px;
       text-align: center;
+      font-size: 32px;
     }
+
+    h2{
+      margin-top: 20px;
+    }
+
+   
+
   
 
     .simulador-box{
@@ -444,6 +455,16 @@
       
       height: 772.56px;
     }
+
+    .appContainer .desktop{
+      display: none;
+    }
+
+    .appContainer .mobile{
+      margin-top: 20px;
+      display: block;
+    }
+
   
     .textoapp{
       color: var(--colorBranco);
@@ -462,6 +483,7 @@
     footer{
       display: flex;
       flex-direction: column;
+      align-items: center;
       margin: 0 auto;
       height: 300px;
       
@@ -471,11 +493,13 @@
       
       display: flex;
       flex-direction: column;
-      margin-bottom: 20px;
+      align-items: center;
+      gap: 5px;
+      margin: 20px 0;
     }
   
     footer .right{
-      margin-bottom: 20px;
+      margin-top: 20px;
       
     }
   }
