@@ -1,5 +1,4 @@
-const insertName = document.querySelector('#nome').value;
-const insertValue = document.querySelector('#valor').value;
+const name = document.querySelector('#nome')
 
 
 class Cliente {
@@ -8,10 +7,10 @@ class Cliente {
     this.valor = valor;
   }
   pegarNome() {
-    this.nome = insertName;
+    this.nome = prompt("qual é o seu nome?");
   }
   pegarValor() {
-    this.valor = insertValue;
+    this.valor = parseFloat(prompt("Valor do empréstimo"));
     return this.valor;
   }
   descricao() {
@@ -26,6 +25,5 @@ class Cliente {
   }
 }
 
-console.log(insertName)
 
 export default Cliente;
