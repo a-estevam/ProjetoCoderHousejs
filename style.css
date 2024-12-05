@@ -296,46 +296,57 @@
   }
   .simulador{
     
-    
-    width: 50vw;
+    display: flex;
+    width: 70vw;
     height: 100%;
-    padding: 5px 20px;
+    
+    align-items: center;
+    justify-content: space-between;
+
+  
   }
 
   .simular{
     display: flex;
 
     height: 60px;
-    width: 97.5%;
+    width: 100%;
     border-radius: 10px;
-    margin: 10px;
+    margin: 10px 0;
     padding: 5px 20px;
     justify-content: center;
     align-items: center;
     
   }
 
-  .simulador-right .simulador-left{
+  /* .simulador-right .simulador-left{
     display: flex;
-    flex-direction: column;
-  }
+    flex-direction: row;
+  } */
 
-  .simulador-left{
-    margin-top: 30px;
-  }
+  
 
-  .simulador-left h2{
+  .sectionSimulador h2{
+    padding: 30px 0 0 0;
     text-align: center;
     color: var(--colorAzulPrincipal);
   }
 
-  .simulador-left p{
-    margin-top: 20px;
+  .sectionSimulador p{
+    margin-top: 0px;
     text-align: center;
   }
 
-  .simulador-right{
+ .simulador-right{
+  
+  margin: 80px 0;
+  
+ }
+
+  .simulador-left{
+    width: 65%;
     margin: 80px 0;
+    
   }
 
   .simulador-input{
@@ -344,8 +355,9 @@
     background-color: var(--colorBranco);
     height: 60px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 10px 0;
     padding: 5px 20px;
+  
   }
 
   .simulador-input input{
@@ -364,6 +376,37 @@
     font-size: 12px;
     color: var(--colorCinzaEscuro);
   }
+
+  .cardSimulador{
+    z-index: 999;
+    padding: 35px 0;
+    width: 300px;
+    height: 431px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: var(--colorBranco);
+    border-radius: 10px;
+  }
+
+  .cardSimulador h3{
+    font-size: 25px;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .cardSimulador h2{
+    color: var(--colorAzulPrincipal);
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+  }
+
+    .cardSimulador p{
+      margin-top: -20px;
+    }
+
 
 
 
@@ -561,4 +604,22 @@
 
 
     }
+
+    .simulador{
+    
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      
+      align-items: center;
+      justify-content: space-between;
+
+    }
+
+    .simulador-left{
+      width: 100%;
+      margin: 20px 0;
+      
+    }
+  
   }

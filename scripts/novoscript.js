@@ -3,6 +3,7 @@ const insertEmail = document.querySelector("#email")
 const insertTelefone = document.querySelector("#telefone")
 const insertValor = document.querySelector("#valor")
 const insertParcelas = document.querySelector("#parcelas")
+const cardSimulador = document.querySelector(".simulador-right")
 
 
 document.getElementById("simular").addEventListener("click", (event) => {
@@ -37,8 +38,21 @@ function emprestimo(){
     let valorComJuros = valorSolicitado * (1 + taxaDeJuros * quantidadeDeParcelas)
     let valorPorParcelaComJuros = valorComJuros / quantidadeDeParcelas
 
-    if (isNaN(valorSolicitado) || valorSolicitado <= 5000){
+    if (isNaN(valorSolicitado) || valorSolicitado < 5000){
         alert ("Valor mínimo de R$5.000,00")
+    } else{
+      cardSimulador.innerHTML = ` <div class="cardSimulador">
+                    <h3>${clienteAtivo.nome}</h3>
+                    <h2>${clienteAtivo.valor.toLocaleString("pt-br",{ style: "currency", currency: "BRL" })}</h2>
+                    <p>na sua conta hoje mesmo!</p>
+
+                    <h3>${clienteAtivo.parcelas}X ${valorPorParcelaComJuros.toLocaleString("pt-br",{ style: "currency", currency: "BRL" })}</h3>
+                    <p>valor a ser pago ${valorComJuros.toLocaleString("pt-br",{ style: "currency", currency: "BRL" })}</p>
+
+                    <button id="guardar" class="guardar" type="submit" >Guardar simulação</button>
+
+                    
+                </div>`
     }
 
     console.log(
@@ -63,6 +77,8 @@ function emprestimo(){
         )}!`
       );
       console.log(clienteAtivo);
+
+      
 
 }
 
