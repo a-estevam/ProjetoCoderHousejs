@@ -234,6 +234,10 @@
 
   }
 
+  .swal2-confirm .swal2-styled{
+    background-color: var(--colorAzulSecundario);
+  }
+
   .card-soluction h4{
     color: var(--colorAzulPrincipal);
     font-size: 24px;
@@ -407,8 +411,38 @@
       margin-top: -20px;
     }
 
+    .section-guardar{
+      padding: 30px;
+      background-color: var(--colorCinzaClaro);
+      width: 100%;
+      height: 100%;
+    }
+
+    .card-guardar{
+      padding: 16px;
+      background-color: var(--colorBranco);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-radius: 8px;
+    }
+
+    .card-guardar .id,
+    .card-guardar .valor,
+    .card-guardar .quantidade,
+    .card-guardar .valorParcela{
+      display: flex;
+      align-items: center;
+    }
+
+    .card-guardar button{
+      width: 120px;
+    }
 
 
+    .hide {
+      display: none;
+  }
 
 
   /* celular */
