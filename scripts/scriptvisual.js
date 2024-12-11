@@ -2,6 +2,7 @@ const slider = document.getElementById("slider");
 const valor = document.getElementById("slider-value");
 
 
+
 if (slider && valor) {
   slider.addEventListener("input", () => {
     valor.textContent = parseInt(slider.value).toLocaleString("pt-BR", {
