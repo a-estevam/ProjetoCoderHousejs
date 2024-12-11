@@ -25,4 +25,22 @@ function alerta(){
       }, 900);
 }
 
+function alertValor(){
+  Swal.fire({
+    position: "center",
+    icon: "error",
+    title: "Valor mínimo R$ 5.000,00",
+    showConfirmButton: false,
+    timer: 1500
+  });
+}
 
+function alertCamposObrigatório(){
+  Swal.fire({
+    position: "center",
+    icon: "info",
+    title: "Todos os campos são obrigatórios",
+    showConfirmButton: false,
+    timer: 1500
+  });
+}

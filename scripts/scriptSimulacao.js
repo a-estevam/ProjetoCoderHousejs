@@ -31,8 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="valorParcela">
                 <p><strong>Valor Parcela: </strong>${(simulacao.valorPorParcelaComJuros / simulacao.parcelas).toLocaleString("pt-br", { style: "currency", currency: "BRL" })}</p>
             </div>
+            <div>
             <button onclick="contratarSimulacao('${simulacao.id}')">Contratar</button>
-            <button onclick="excluirSimulacao('${simulacao.id}')">Excluir</button>
+            <button class="btn_excluir" onclick="excluirSimulacao('${simulacao.id}')">Excluir</button>
+            </div>
         `;
     
         guardarContent.appendChild(card);

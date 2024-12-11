@@ -47,7 +47,7 @@ function emprestimo() {
     let valorPorParcelaComJuros = valorComJuros / quantidadeDeParcelas;
 
     if (isNaN(valorSolicitado) || valorSolicitado < 5000) {
-        alert("Valor mínimo de R$5.000,00");
+        alertValor();
     } else if (
         insertNome.value.trim() === "" ||
         insertEmail.value.trim() === "" ||
@@ -55,7 +55,7 @@ function emprestimo() {
         isNaN(insertParcelas.value) ||
         insertParcelas.value.trim() === ""
     ) {
-        alert("Preencha os campos corretamente");
+        alertCamposObrigatório();
     } else {
         alerta();
 
