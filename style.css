@@ -51,6 +51,7 @@
     padding: 0 15px;
   }
 
+
   h1{
     z-index: 999;
     font-size: 36px;
@@ -439,6 +440,13 @@
       width: 100%;
       height: 100%;
     }
+    .section-guardar h2{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: var(--colorAzulPrincipal);
+    }
+
+    
 
     .card-guardar{
       padding: 16px;
@@ -447,6 +455,7 @@
       flex-direction: row;
       justify-content: space-between;
       border-radius: 8px;
+      margin-top: 40px;
     }
 
     .card-guardar .id,
@@ -676,6 +685,23 @@
       width: 100%;
       margin: 20px 0;
       
+    }
+
+    .guardar-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+
+    .card-guardar{
+      width: 352px;
+      height: 207px;
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
     }
   
   }
