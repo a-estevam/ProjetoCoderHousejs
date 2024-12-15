@@ -44,3 +44,13 @@ function alertCamposObrigatório(){
     timer: 1500
   });
 }
+
+// function alertContratar(id) {
+//   Swal.fire({
+//     position: "center",
+//     icon: "success",
+//     title: `Simulação com ID ${id} contratada!`,
+//     showConfirmButton: false,
+//     timer: 1500
+//   });
+// }

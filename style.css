@@ -60,6 +60,7 @@
   }
 
   h2{
+    font-size: 26px;
     font-weight: normal;
     line-height: normal;
   }
@@ -273,9 +274,18 @@
     justify-content: space-around;
   }
 
+  .textoapp h2{
+    font-size: 40px;
+    
+
+  }
+
   .textoapp{
-    h2, p{
+    p{
+      font-size: 24px;
       margin: 20px 0;
+      font-weight: normal;
+      line-height: normal;
     }
     
   }
@@ -480,6 +490,11 @@
       display: none;
   }
 
+  .azulDetalhe{
+    background-color: var(--colorAzulPrincipal);
+    height: 10px;
+  }
+
 
   /* celular */
 
@@ -487,6 +502,9 @@
     
     h2, p{
       text-align: center;
+    }
+    .azulDetalhe{
+      display: none;
     }
 
     header{

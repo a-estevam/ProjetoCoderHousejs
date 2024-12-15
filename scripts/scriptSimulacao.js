@@ -42,10 +42,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function contratarSimulacao(id) {
+    // alertContratar(id)
     alert(`Simulação com ID ${id} contratada!`);
 }
 
 function excluirSimulacao(id) {
+    
     let simulacoes = JSON.parse(localStorage.getItem("simulacoes")) || [];
     simulacoes = simulacoes.filter(simulacao => simulacao.id !== id);
     localStorage.setItem("simulacoes", JSON.stringify(simulacoes));
