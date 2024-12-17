@@ -42,22 +42,44 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function contratarSimulacao(id) {
-    // alertContratar(id)
-    alert(`Simulação com ID ${id} contratada!`);
-}
-
-function excluirSimulacao(id) {
-    
     let simulacoes = JSON.parse(localStorage.getItem("simulacoes")) || [];
+    
     simulacoes = simulacoes.filter(simulacao => simulacao.id !== id);
     localStorage.setItem("simulacoes", JSON.stringify(simulacoes));
     
+    const cardToContratado = document.querySelector(`.card-guardar[data-id="${id}"]`);
+    if (cardToContratado) {
+        cardToContratado.style.backgroundColor = "#d4edda";
+        cardToContratado.style.borderColor = "#c3e6cb";
+
+        const buttonContratar = cardToContratado.querySelector("button");
+        const buttonExcluir = cardToContratado.querySelector(".btn_excluir");
+    if (buttonContratar) {
+        buttonContratar.style.backgroundColor = "gray"; 
+        buttonContratar.style.color = "#363535"; 
+        buttonContratar.disabled = true;
+        buttonContratar.style.cursor = "not-allowed";
+        buttonExcluir.style.backgroundColor = "gray"; 
+        buttonExcluir.style.color = "#363535"; 
+        buttonExcluir.disabled = true;
+        buttonExcluir.style.cursor = "not-allowed";
+       
+    }
+
+    alertContratar(id)
+    }
     
-    const cardToRemove = document.querySelector(`.card-guardar[data-id="${id}"]`);
-    if (cardToRemove) cardToRemove.remove();
+}
+
+function excluirSimulacao(id) {
+    let simulacoes = JSON.parse(localStorage.getItem("simulacoes")) || [];
+    
+    
+    simulacoes = simulacoes.filter(simulacao => simulacao.id !== id);
+    localStorage.setItem("simulacoes", JSON.stringify(simulacoes));
 
     
-    if (simulacoes.length === 0) {
-        document.querySelector(".guardar-content").innerHTML = "<p>Não há simulações guardadas.</p>";
-    }
+    alertaExcluir(id, simulacoes);
 }
+
+
