@@ -45,7 +45,7 @@ function contratarSimulacao(id) {
     let simulacoes = JSON.parse(localStorage.getItem("simulacoes")) || [];
     
     simulacoes = simulacoes.filter(simulacao => simulacao.id !== id);
-    localStorage.setItem("simulacoes", JSON.stringify(simulacoes));
+    // localStorage.setItem("simulacoes", JSON.stringify(simulacoes));
     
     const cardToContratado = document.querySelector(`.card-guardar[data-id="${id}"]`);
     if (cardToContratado) {
@@ -53,16 +53,16 @@ function contratarSimulacao(id) {
         cardToContratado.style.borderColor = "#c3e6cb";
 
         const buttonContratar = cardToContratado.querySelector("button");
-        const buttonExcluir = cardToContratado.querySelector(".btn_excluir");
+        // const buttonExcluir = cardToContratado.querySelector(".btn_excluir");
     if (buttonContratar) {
         buttonContratar.style.backgroundColor = "gray"; 
         buttonContratar.style.color = "#363535"; 
         buttonContratar.disabled = true;
         buttonContratar.style.cursor = "not-allowed";
-        buttonExcluir.style.backgroundColor = "gray"; 
-        buttonExcluir.style.color = "#363535"; 
-        buttonExcluir.disabled = true;
-        buttonExcluir.style.cursor = "not-allowed";
+        // buttonExcluir.style.backgroundColor = "gray"; 
+        // buttonExcluir.style.color = "#363535"; 
+        // buttonExcluir.disabled = true;
+        // buttonExcluir.style.cursor = "not-allowed";
        
     }
 
