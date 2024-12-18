@@ -46,6 +46,8 @@ function emprestimo() {
     let valorComJuros = valorSolicitado * (1 + taxaDeJuros * quantidadeDeParcelas);
     let valorPorParcelaComJuros = valorComJuros / quantidadeDeParcelas;
 
+    let palavras;
+
     if (isNaN(valorSolicitado) || valorSolicitado < 5000) {
         alertValor();
     } else if (
@@ -58,11 +60,16 @@ function emprestimo() {
         alertCamposObrigatório();
     } else {
         alerta();
+        
+        const nomeResumo = clienteAtivo.nome;
+        palavras = nomeResumo.split(' ');
+
+
 
         setTimeout(function () {
             cardSimulador.innerHTML = ` 
                 <div class="cardSimulador">
-                    <h3>${clienteAtivo.nome}</h3>
+                    <h3>${palavras[0]} ${palavras[1]}</h3>
                     <h2>${clienteAtivo.valor.toLocaleString("pt-br",{ style: "currency", currency: "BRL" })}</h2>
                     <p>na sua conta hoje mesmo!</p>
                     <h3>${clienteAtivo.parcelas}X ${valorPorParcelaComJuros.toLocaleString("pt-br",{ style: "currency", currency: "BRL" })}</h3>
@@ -82,4 +89,6 @@ function emprestimo() {
 
         salvarSimulacao(simulacao); 
     }
+    
 }
+
